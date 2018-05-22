@@ -37,9 +37,21 @@ hbs.registerHelper('screamIt',(text)=> {
 app.get('/',(req,res)=>{
     //res.send('<h1>Hello World </h1>');
     res.render('home.hbs',{
-        welcomeMessage : 'Chandni',
+        welcomeMessage : 'Chandni'
       //  date : new Date().getFullYear()
     })
+});
+
+app.get('/about', (req,res)=> {
+    res.render('about.hbs', {
+        welcomeMessage : 'Chandni'
+    });
+});
+
+app.get('/project', (req,res)=> {
+    res.render('project.hbs', {
+        welcomeMessage : 'Chandni'
+    });
 });
 
 app.get('/bad',(req,res)=>{
