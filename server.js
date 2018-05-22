@@ -50,4 +50,6 @@ app.get('/bad',(req,res)=>{
 
 
 
-app.listen(port,`Server is starting up on ${port}`);
+app.listen(port,() => {
+    console.log(`Server is starting up on ${port}`);
+});
